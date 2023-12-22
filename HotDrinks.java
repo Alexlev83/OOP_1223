@@ -1,7 +1,7 @@
 public class HotDrinks extends Product{
     private int temperature;
-    public HotDrinks(String name, int cost, int temperature) {
-        super(name, cost);
+    public HotDrinks(String name, int cost, int volume, int temperature) {
+        super(name, cost, volume);
         this.temperature = temperature;
     }
 
@@ -16,10 +16,6 @@ public class HotDrinks extends Product{
 
     @Override
     public String toString() {
-        return "HotDrinks{" +
-                "name=" + super.getName() +
-                ";cost=" + super.getCost() +
-                ";temperature=" + temperature +
-                '}';
+        return super.toString() + "temperature=" + temperature;
     }
 }
