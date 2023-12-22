@@ -17,6 +17,7 @@ public class HotDrinksVendingMachine implements VendingMachine{
         return null;
     }
 
+    
     public Product getProduct(String name, int temperature){
         for (Product item : productList)
             if(item.getName().equals(name) && ((HotDrinks) item).temperature() == temperature)
