@@ -11,9 +11,9 @@ public class HotDrinksVendingMachine implements VendingMachine{
 
     @Override
     public Product getProduct(String name) {
-        for (Product item : productList)
-            if(item.getName().equals(name))
-                return item;
+        for (Product product : productList)
+            if(product.getName().equals(name))
+                return product;
         return null;
     }
 

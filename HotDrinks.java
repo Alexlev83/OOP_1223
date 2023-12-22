@@ -15,7 +15,12 @@ public class HotDrinks extends Product{
     }
 
     @Override
+
     public String toString() {
-        return super.toString() + "temperature=" + temperature;
-    }
+        return "HotDrinks{" +
+         "name=" + super.getName() +
+         ";cost=" + super.getCost() +
+         ";temperature=" + temperature +
+         '}';
+     }
 }
